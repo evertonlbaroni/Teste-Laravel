@@ -24,6 +24,14 @@ class User extends Authenticatable
     ];
 
     /**
+     *
+     */
+    public function phones()
+    {
+        return $this->hasMany(Phone::class);
+    }
+
+    /**
      * The attributes that should be hidden for serialization.
      *
      * @var array<int, string>
